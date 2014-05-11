@@ -16,8 +16,8 @@ axis.POSIXct(1, at = seq(dates[1], dates[2], by = "days"))
 
 plot(time, Sub_metering_1, type = "l", ylab = "Energy sub metering", xlab = "", xaxt = "n")
 axis.POSIXct(1, at = seq(dates[1], dates[2], by = "days"))
-lines(Sub_metering_2, col = "red")
-lines(Sub_metering_3, col = "blue")
+lines(time, Sub_metering_2, col = "red")
+lines(time, Sub_metering_3, col = "blue")
 legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), box.col = NA, inset = .02)
 
 plot(time, Global_reactive_power, type = "l", xaxt = "n", xlab = "datetime")
